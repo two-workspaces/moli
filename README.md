@@ -12,7 +12,7 @@ It's one service and needs no database or volume. Moli runs `moli serve` on loca
 - **No access to your private network.** Moli starts with `--block-private-networks`. Pages and scripts can't reach `*.railway.internal`, other private IP ranges, the cloud metadata address, or the browser's own control port. Tested on Railway.
 - **Works with `connectOverCDP` out of the box.** Moli tells clients to connect to `ws://127.0.0.1:9222`. The gate rewrites `/json/version` so that Playwright and Puppeteer get your public `wss://` address instead.
 - **Screenshots on.** `MOLI_ARGS` defaults to `--layout`, so screenshots, element boxes and coordinate clicks work. Layout still runs only when a request needs it.
-- **Pinned release.** The image downloads Moli `v1.1.17`. To upgrade, change `MOLI_VERSION` in the Dockerfile of your fork.
+- **Pinned release.** The image downloads Moli `v1.1.25`. To upgrade, change `MOLI_VERSION` in the Dockerfile of your fork.
 
 ## Common Use Cases
 
